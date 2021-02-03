@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>함수</h1>
+<!-- 	public int plus(int a, int b){
+		int sum = a+b;
+		return sum;
+	
+	}
+	
+	int plusSum = plus(5, 8); -->
+	
+	
+	<script type="text/javascript">
+		// 함수 정의	
+	
+		function plus(a, b){
+			var sum = a + b;
+			return sum;
+		}
+		
+		var plusSum = plus(3, 5);
+		console.log(plusSum);
+		
+		var result = plus(1000, 2000);
+		console.log(result);
+		
+		var result01 = plus(2.7, 5.8);
+		console.log(result01);
+		
+		var result02 = plus("안녕", "하세요");
+		console.log(result02);
+	
+		/* 이름 있는 함수(기명 함수, 선언적함수) --> 정의 부분부터 해석 된다.
+		함수 정의가 밑에 있어도 차례대로 진행되는 게 아니라서 정의가 실행됨*/
+		/* 	
+		// 함수 정의	
+		
+		function plus(a, b){
+			var sum = a + b;
+			return sum;
+		} */
+		
+		/* 이름 없는 함수(익명 함수) 	--> 이름이 없어서 바로 사용해야함-->2번 사용 안됨
+							--> 1번 이상 사용하려면 변수에 넣어두고 사용 */
+		var minus = function (a, b){
+			return a-b;					
+		}					
+		
+		var result03 = minus(5, 2);
+		console.log(result03);
+		
+		var result04 = minus(5, 5);
+		console.log(result04);
+		
+		/* 이름 없는 함수는 밑에 있을 경우 실행 불가 */
+		
+		
+		/* 함수를 사용할 때 보통 정의는 위에서 해준다 */
+		
+	</script>
+	
+
+	
+</body>
+
+
+
+</html>
