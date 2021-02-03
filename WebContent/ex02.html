@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바 스크립트 변수</h1>
+</body>
+<script type="text/javascript">
+	/*  변수 선언법
+		자료형을 쓰지 않는다
+	*/
+	console.log("변수 선언");
+	var no = 3;
+	var str = "안녕하세요";
+	var result = 3>5;
+	
+	/* const//
+	let// */
+	
+	console.log(no);
+	console.log(str);
+	console.log(result);
+
+	num = 1234;
+	console.log(num);
+	console.log("==============");
+	
+</script>
+
+<script type="text/javascript">
+	/* 변수 이름이 같을 때 */
+	
+	var person = "정우성";
+	person = "이효리";
+	console.log(person);
+	console.log("--------");
+	
+	var person01 = "정우성";
+	var person01 = "이효리";
+	var person01 = "이정재";
+	console.log(person01);
+	console.log("==============");
+
+</script>
+
+<script type="text/javascript">
+	/* 대입시 자료형이 결정된다 */
+	
+	/* number string boolean --> 변수 선언 시 표기하지 않는다 */
+	
+	var date;
+	console.log(typeof date);	//undefined
+	
+	date = 15;
+	console.log(typeof date);	//number
+	
+	date = "안녕"
+	console.log(typeof date);	//string
+	
+	date = true;
+	console.log(typeof date);	//boolean
+	
+	console.log("==============");
+</script>
+
+<script type="text/javascript">
+	/* null undefined */
+
+	var myVar01;
+	var myVar02 = null;
+	
+	console.log(myVar01);	//undefined
+	console.log(myVar02);	//null
+	
+	console.log("==============");
+</script>
+
+<script type="text/javascript">
+	/* == === 비교(일치 연산자)*/
+	console.log("123" == 123);	// true --> 값(모양)만 비교
+	console.log("123" === 123);	// false --> 자료형까지 비교
+	
+	console.log(myVar01 == myVar02);
+	console.log(myVar01 === myVar02);
+	
+	console.log('----------------');
+	console.log('' == false);	//true
+	console.log(''===false);	//false
+	
+	console.log('' == 0);	//true
+	console.log('' === 0);	//false
+	
+	console.log('----------------');
+	console.log('' == false);	//true
+	console.log('' == 0);	//true
+	console.log(false == 0);	//true
+	
+</script>
+
+</html>
